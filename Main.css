@@ -1,0 +1,133 @@
+.bodys{
+     background-color:black;
+     /*the color of the background*/
+ }
+ .h1c{
+     color: rgb(219, 219, 219);
+     font: normal 30px Arial;
+     position: relative;
+     top: -20px;
+     /*the sentence in upper left corner*/
+ }
+ .imgs{
+     position: relative;
+     left: 900px;
+     height: 80px;
+     width: 80px;
+     top: 25px;
+     /*the postion of the image in upper right corner*/
+ }
+ .test, .test2, .test3, .test4,
+ .plus, .minus, .plus2, .minus2, .plus3, .minus3, .plus4, .minus4,
+ .results1, .results2, .results3, .results4, .results5, .results6 {
+     transition: all 2s;
+ }
+ .test{
+     width: 150px;
+     height: 150px;
+     position: relative;
+     border-radius: 10%;
+     /*style of first colored button*/
+ }
+ .test2{
+     width: 150px;
+     height: 150px;
+     position: relative;
+     border-radius: 20%;
+     left: 20px;
+     /*style of second colored button*/
+ }
+ .test3{
+     width: 150px;
+     height: 150px;
+     position: relative;
+     border-radius: 40%;
+     left: 40px;
+     /*style of third colored button*/
+ }
+ .test4{
+     width: 150px;
+     height: 150px;
+     position: relative;
+     border-radius: 80%;
+     left: 60px;
+     /*style of fourth colored button*/
+ }
+ #result{
+     width: 150px;
+     height: 150px;
+     position: relative;
+     top: 10px;
+     border-radius: 100px;
+     font-size: 40px;
+     /*style for the buttons*/
+ }
+ .resulted{
+     color: white;
+     font: normal 30px Arial;
+     position: relative;
+     top: 20px;
+ }
+ .product{
+     font: normal 20px Arial;
+     color: red;
+ }
+ #sum, #sum2, #sum3, #sum4{
+     width: 30px;
+     height: 30px;
+     position: relative;
+ }
+ #sum2{
+     left: 8%;
+ }
+ #sum3{
+     left: 16%;
+ }
+ #sum4{
+     left: 24%;
+ }
+ @media only screen and (max-width: 768px) {
+     #result{
+         width: 50px;
+         height: 50px;
+     }
+     #color-button{
+         width: 50px;
+         height: 50px;
+     }
+     .imgs{
+         left: 15%;
+         width: 30px;
+         height: 30px;
+         position: relative;
+     }
+     .red{
+         left: 5%;
+         font: normal 2px Arial;
+     }
+     .blue{
+         left: 15%;
+     }
+     .green{
+         left: 24%;
+     }
+     .h1c{
+         top: 1px;
+         font-size: 20px;
+     }
+ }
+ @media only screen and (max-width: 1280px) and (min-width: 768px) {
+     .imgs{
+         left: 40%;
+     }
+     .red{
+         left: 12%;
+     }
+     .blue{
+         left: 23%;
+     }
+     .green{
+         left: 35%;
+     }
+ }
+ 
