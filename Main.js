@@ -130,22 +130,15 @@ const work = () =>{
     image = 0;
     document.body.style.background = 'black';
     hps.style.color = 'white';
-    product.style.color = 'Red';
     imgs.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg');
-    const atr = [a,b,c,d,yel,rad,blu,gre,yellow0,red0,blue0,green0,plus,plus2,plus3,plus4,minus,minus2,minus3,minus4,resulted,hps];
+    const atr = [a,b,c,d,yel,rad,blu,gre,yellow0,red0,blue0,green0,plus,plus2,plus3,plus4,minus,minus2,minus3,minus4,hps,resulted];
     for( let i in atr){                    
         atr[i].style.transition = "2s";};
     sum1(count[0],'');
     sum2(count[1],'');
     sum3(count[2],'');
     sum4(count[3],'');
-    for(let i in resultid){
-        resulted.style.color = "white";
-        resultid[i].style.backgroundColor = 'black';
-        resultid[i].style.color= "white";
-        resultid[i].style.borderColor = 'white';
-        resultid[i].style.transition = "2s";
-    };
+    resulted.style.color = "white";
 };
 plus.addEventListener('click',function(){
     count[0]++;
@@ -227,18 +220,6 @@ minus4.addEventListener('click',function(){
     };
     green0.innerHTML = color[3];
 });
-resultid[0].addEventListener("click", function(){
-    product.innerHTML= Number(color[0]+color[1]+color[2]+color[3])});
-resultid[1].addEventListener("click",function(){
-    product.innerHTML= Number(((color[0]-color[1])-color[2])-color[3])});
-resultid[2].addEventListener("click", function(){
-    product.innerHTML= Number(color[0]*color[1]*color[2]*color[3])});
-resultid[3].addEventListener("click",function(){
-    product.innerHTML= Number(color[0]/color[1]/color[2]/color[3])});
-resultid[4].addEventListener("click",function(){
-    product.innerHTML = Number(color[0]%color[1]%color[2]%color[3])});
-resultid[5].addEventListener("click", function(){
-    product.innerHTML = Number(color[0]**color[1]**color[2]**color[3])});
 imgs.addEventListener("click",function() {
     image++;
     if(image === 1){
@@ -248,14 +229,8 @@ imgs.addEventListener("click",function() {
         sum4('',count[3]);
         document.body.style.background = 'white';
         hps.style.color = 'black';
-        product.style.color = 'Brown';
-        imgs.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg');
-        for(let i in resultid){
-            resulted.style.color = "black";
-            resultid[i].style.backgroundColor = 'white';
-            resultid[i].style.color = 'black';
-            resultid[i].style.borderColor = 'black';
-        }
+        imgs.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg');0
+        resulted.style.color = "black";
     } else{
         work();}
     });

@@ -1,59 +1,64 @@
-.bodys{
+#bodys{
      background-color:black;
      /*the color of the background*/
  }
- .h1c{
+ #h1c{
      color: rgb(219, 219, 219);
      font: normal 30px Arial;
      position: relative;
      top: -20px;
      /*the sentence in upper left corner*/
  }
- .imgs{
+ #imgs{
      position: relative;
      left: 900px;
      height: 80px;
      width: 80px;
-     top: 25px;
      /*the postion of the image in upper right corner*/
  }
- .test, .test2, .test3, .test4,
- .plus, .minus, .plus2, .minus2, .plus3, .minus3, .plus4, .minus4,
- .results1, .results2, .results3, .results4, .results5, .results6 {
+ .color_button,
+ .sum, .sum2, .sum3, .sum4{
      transition: all 2s;
  }
- .test{
-     width: 150px;
+ .color_button{
+    width: 150px;
      height: 150px;
      position: relative;
+ }
+ #test{
      border-radius: 10%;
      /*style of first colored button*/
  }
- .test2{
-     width: 150px;
-     height: 150px;
-     position: relative;
+ #test2{
      border-radius: 20%;
      left: 20px;
      /*style of second colored button*/
  }
- .test3{
-     width: 150px;
-     height: 150px;
-     position: relative;
+ #test3{
      border-radius: 40%;
      left: 40px;
      /*style of third colored button*/
  }
- .test4{
-     width: 150px;
-     height: 150px;
-     position: relative;
+ #test4{
      border-radius: 80%;
      left: 60px;
      /*style of fourth colored button*/
  }
- #result{
+ .sum, .sum2, .sum3, .sum4{
+     width: 30px;
+     height: 30px;
+     position: relative;
+ }
+ .sum2{
+     left: 8%;
+ }
+ .sum3{
+     left: 16%;
+ }
+ .sum4{
+     left: 24%;
+ }
+.result{
      width: 150px;
      height: 150px;
      position: relative;
@@ -62,72 +67,92 @@
      font-size: 40px;
      /*style for the buttons*/
  }
- .resulted{
+#resulted{
      color: white;
      font: normal 30px Arial;
      position: relative;
      top: 20px;
  }
- .product{
+#product{
      font: normal 20px Arial;
      color: red;
  }
- #sum, #sum2, #sum3, #sum4{
-     width: 30px;
-     height: 30px;
-     position: relative;
+ #puzzle-area{
+    margin-top: 20px;
+    color: white;
+    font: normal 20px Arial;
+    text-align: center;
  }
- #sum2{
-     left: 8%;
+ #puzzle-display{
+    margin-bottom:12px;
+    font-size:22px
  }
- #sum3{
-     left: 16%;
+ #puzzle-confirm{
+    padding: 10px 28px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
  }
- #sum4{
-     left: 24%;
+ #puzzle-score{
+    font-size:16px;
+    color:#aaa;
+ }
+ #puzzle-feedback{
+    margin-top:10px;
+    font-size:18px;
+    min-height:26px
+ }
+ #puzzle-give-up{
+    padding: 10px 28px; font-size: 16px;
+    background: transparent; color: #aaa;
+    border: 1px solid #555; border-radius: 8px;
+    cursor: pointer;
  }
  @media only screen and (max-width: 768px) {
-     #result{
+     .result{
          width: 50px;
          height: 50px;
      }
-     #color-button{
+     .color-button{
          width: 50px;
          height: 50px;
      }
-     .imgs{
+     #imgs{
          left: 15%;
          width: 30px;
          height: 30px;
          position: relative;
      }
-     .red{
+     #red{
          left: 5%;
          font: normal 2px Arial;
      }
-     .blue{
+     #blue{
          left: 15%;
      }
-     .green{
+     #green{
          left: 24%;
      }
-     .h1c{
+     #h1c{
          top: 1px;
          font-size: 20px;
      }
  }
  @media only screen and (max-width: 1280px) and (min-width: 768px) {
-     .imgs{
+     #imgs{
          left: 40%;
      }
-     .red{
+     #red{
          left: 12%;
      }
-     .blue{
+     #blue{
          left: 23%;
      }
-     .green{
+     #green{
          left: 35%;
      }
  }
- 
